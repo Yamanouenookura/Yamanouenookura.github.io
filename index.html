@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学同好会</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>数学同好会</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#events">イベント</a></li>
+                <li><a href="#news">ニュース</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>数学の世界へようこそ</h2>
+            <p>数学同好会では、数理の美しさを追求し、新たな知識を共有しています。</p>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>今後のイベント</h2>
+        <ul id="event-list">
+            <!-- イベントリストがここに動的に追加されます -->
+        </ul>
+    </section>
+
+    <section id="news">
+        <h2>最新ニュース</h2>
+        <ul id="news-list">
+            <!-- ニュースがここに動的に追加されます -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form id="contact-form">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 数学同好会</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
