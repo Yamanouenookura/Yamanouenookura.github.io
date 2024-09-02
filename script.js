@@ -28,3 +28,41 @@ $(document).ready(function() {
         $(this).trigger("reset");
     });
 });
+
+
+// EmailJSの初期化
+(function() {
+    emailjs.init("YOUR_USER_ID"); // ここにEmailJSのユーザーIDを入れます
+})();
+
+$(document).ready(function() {
+    $("#contact-form").on("submit", function(event) {
+        event.preventDefault(); // デフォルトのフォーム送信を防ぐ
+
+        // フォームデータを取得
+        const name = $("#name").val();
+        const email = $("#email").val();
+        const message = $("#message").val();
+
+        // EmailJSの送信設定
+        const serviceID = "service_z5cygwp";
+        const templateID = "template_e6oc0f6";
+
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            message: message
+        };
+
+        // Emailを送信
+        emailjs.send(serviceID, templateID, templateParams)
+            .then(function(response) {
+                alert("お問い合わせが送信されました。ありがとうございます！");
+                // フォームをリセット
+                $("#contact-form")[0].reset();
+            }, function(error) {
+                alert("送信中にエラーが発生しました。もう一度お試しください。");
+            });
+    });
+});
+
