@@ -6,7 +6,7 @@ $(document).ready(function() {
     // ニュースリストの追加
     $('#news-list').append('<li><a href="数学同好会入会試験＿問題用紙.pdf" download="第一回入部試験">第一回入部試験ー問題用紙</a></li>');
     $('#news-list').append('<li><a href="数学同好会入会試験＿解答用紙.pdf" download="第一回入部試験">第一回入部試験ー解答用紙</a></li>');
-    $('#news-list').append('<li>ニュース2</li>');
+
 
     // EmailJSのフォーム送信処理
     document.getElementById('contact-form').addEventListener('submit', function(event) {
