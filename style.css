@@ -76,3 +76,51 @@ footer {
 .hero-content {
     color: black;
 }
+
+/* 通常時のヘッダー設定 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* レスポンシブ時のヘッダー設定 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* お問い合わせフォームのボックスを常に縦並びに */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* フォーム全体の最大幅を設定 */
+    margin: 0 auto; /* フォームを中央揃え */
+}
+
+#contact-form label, 
+#contact-form input, 
+#contact-form textarea, 
+#contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#contact-form textarea {
+    height: 150px; /* テキストエリアの高さを指定 */
+}
