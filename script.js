@@ -5,7 +5,9 @@ $(document).ready(function() {
 
     // ニュースリストの追加
     $('#news-list').append('<li><a href="桜美林高校_模試.pdf" download="桜美林高校_模試">桜美林高校_模試</a></li>');
-    $('#news-list').append('<li><a href="桜美林高校_模試_解答用紙.pdf" download="桜美林高校_模試_解答用紙">桜美林高校_模試_解答用紙</a></li>');
+    $('#news-list').append('<li><a href="桜美林高校_模試_解答用紙.pdf" download="桜美林高校_模試_解答用紙">桜美林中学校_模試_解答用紙</a></li>');
+    $('#news-list').append('<li><a href="桜美林中学校_模試.pdf" download="桜美林高校_模試">桜美林中学校_模試</a></li>');
+    $('#news-list').append('<li><a href="桜美林中学_模試_解答用紙.pdf" download="桜美林中学_模試_解答用紙">桜美林中学_模試_解答用紙</a></li>');
 
 
     // EmailJSのフォーム送信処理
